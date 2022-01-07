@@ -1,22 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Button from './components/Button';
+//import ButtonListWithFor from './components/ButtonListWithFor';
 
-import ButtonList from './components/ButtonList';
+import ButtonListWithMap from './components/ButtonListWithMap';
+
+import Profile from './components/Profile'
+import Profile2 from './components/Profile2'
+import Profile3 from './components/Profile3'
+import Profile4 from './components/Profile4'
 
 
 function App() {
-  const newDiv = () => {
-   document.getElementById("root").insertAdjacentHTML('beforeend', '<div>New div</div>')
-  }
-
-  const buttonText = "New button text"
+  
 
   return (
     <div className="App" >
-     <Button onClick={newDiv} buttonText={buttonText} />
-     <ButtonList onClick={newDiv} buttonText={buttonText} />
+     {/*<ButtonListWithFor />*/}
+     <ButtonListWithMap />
+     <Profile />
+     <Profile2 />
+     <Profile3 />
+     <Profile4 />
     </div>
 
   );
